@@ -516,25 +516,7 @@ h1 .hero-title-gold {
   background: #d7d8d0;
   border-radius: 15px;
 }
-.project-art:before,
-.project-art:after {
-  content: "";
-  position: absolute;
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  top: -80px;
-  right: -36px;
-}
-.project-art:after {
-  width: 125px;
-  height: 125px;
-  top: auto;
-  bottom: -75px;
-  left: -35px;
-  border-color: rgba(17, 23, 21, 0.18);
-}
+
 .art-finance {
   background: linear-gradient(140deg, #1e3443, #42636b 55%, #b9b7a7);
 }
