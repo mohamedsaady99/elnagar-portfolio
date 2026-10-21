@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Image from "next/image";
 
+const basePath = process.env.GITHUB_PAGES ? "/elnagar-portfolio" : "";
+
 const projects = [
   {
     name: "FORUS FINANCIAL",
@@ -156,7 +158,7 @@ function BrandLogo() {
   return (
     <img
       className="brand-logo"
-      src="/elnagar-logo.png"
+      src={`${basePath}/elnagar-logo.png`}
       alt="ELNAGAR — Software Engineering"
     />
   );
@@ -275,7 +277,7 @@ export default function Home() {
             <div className="portrait-frame">
               <img
                 className="portrait-photo"
-                src="/mohamed-elnagar.jpg"
+                src={`${basePath}/mohamed-elnagar.jpg`}
                 alt="Mohamed Elnagar, Frontend Software Engineer"
               />
             </div>
@@ -374,7 +376,7 @@ export default function Home() {
               <article className="project-card" key={p.name}>
                 <div className={`project-art art-${p.style}`}>
                   <Image
-                    src={`${p.image}`}
+                    src={`${basePath}${p.image}`}
                     alt="project image"
                     className="project-image"
                     width="300"
